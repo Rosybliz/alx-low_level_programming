@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints lowercase in reverse
+ * main - prints lowercase alphabet in reverse
  *
  * Return: Always 0 (Success)
  */
@@ -11,7 +11,7 @@ int main(void)
 		while (x >= 'a')
 		{
 			putchar(x);
-			z--;
+			x--;
 		}
 	putchar('\n');
 	return (0);
