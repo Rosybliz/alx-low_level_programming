@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * print_alphabet_x10 - prints alpphabets a-z ten times
  *
@@ -21,5 +21,4 @@ void print_alphabet_x10(void)
 		_putchar('\n');
 		i++;
 	}
-	return (0);
 }
