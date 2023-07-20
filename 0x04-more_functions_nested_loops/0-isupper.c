@@ -2,6 +2,9 @@
 
 /**
  * main - a function that prints uppercase
+ *
+ * @c: the variable to be tested
+ *
  * Return 1 if uppercase or 0 if otherwise
  */
 
