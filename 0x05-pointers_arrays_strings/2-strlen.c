@@ -1,7 +1,8 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strlen: counts characters in a string
+ * _strlen - counts characters in a string
  * @s: the string variable
  *
  * Description: function takes a string as parameter
@@ -10,13 +11,13 @@
 
 int _strlen(char *s)
 {
-   int len = 0;
+int len = 0;
 
-    while (*s != '\0');
-        {
-	    len++;
-	    s++;
-	}
+while (*s != '\0')
+{
+len++;
+s++;
+}
 
 return (len);
 }
