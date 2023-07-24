@@ -4,7 +4,6 @@
  * swap_int - swaps to input integers
  * @a: first swap integer
  * @b: seecond swap integer
- * @temp: temporary placeholder.
  *
  * Description: function swap
  * Return : void
