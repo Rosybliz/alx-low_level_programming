@@ -8,13 +8,13 @@
 
 char *string_toupper(char *)
 {
-	int c = 0;
+	int count = 0;
 
-	while (*(s + c) != '\0')
+	while (*(s + count) != '\0')
 	{
-		if ((*(s + c) >= 97) && (*(s + c) <= 122))
-			*(s + c) = *(s + c) - 32;
-		++c;
+		if ((*(s + count) >= 97) && (*(s + count) <= 122))
+			*(s + count) = *(s + count) - 32;
+		++count;
 	}
 	return (s);
 }
