@@ -6,7 +6,7 @@
  * @src: string to be appended
  * Description: two strings are joined and a terminating
  * null byte added
- * Return : dest
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
