@@ -13,5 +13,5 @@ int is_prime_number(int n)
 		return (1);
 	if ((n / n) != 1)
 		return (0);
-	return (n / (is_prime_number( n - 1)));
+	return (n / (is_prime_number(n - 1)));
 }
