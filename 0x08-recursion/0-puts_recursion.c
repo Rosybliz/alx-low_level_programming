@@ -4,7 +4,7 @@
  * _puts_recursion - the recursive function that prints a string
  * followed by a new line
  * @s: the string to be printed
- * Return: always 0
+ * Return: void
  */
 
 void _puts_recursion(char *s)
@@ -14,6 +14,6 @@ void _puts_recursion(char *s)
 		_putchar('\n');
 		return;
 	}
-		_putchar((*s));
+		_putchar(*(s));
 		_puts_recursion((++s));
 }
