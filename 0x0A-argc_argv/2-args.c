@@ -11,10 +11,8 @@ int main(int argc __attribute__((unused)), char *argv[])
 {
 	int i;
 
-	for (i = 0; i <= 0; ++i)
+	for (i = 0; i <= argc; ++i)
 	{
-		printf("%s\t", argv[i]);
-		putchar('\n');
 		printf("%s\n", argv[i]);
 	}
 	return (0);
