@@ -13,9 +13,9 @@ int main(int argc __attribute__((unused)), char *argv[])
 
 	for (i = 0; i <= 0; ++i)
 	{
-		printf("%s\n", argv[i]);
-		printf("%s\n", argv[i]);
+		printf("%s\t", argv[i]);
 		putchar('\n');
+		printf("%s\n", argv[i]);
 	}
 	return (0);
 }
