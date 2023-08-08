@@ -10,10 +10,11 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int size, i, n;
+	unsigned int n = 16;
 
-	s1 = (char *)malloc(size * sizeof(char));
-
+	s1 = (char *)malloc(n * sizeof(char));
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	while (*s1)
 		s1++;
 	while (*s2)
@@ -22,11 +23,7 @@ char *str_concat(char *s1, char *s2)
 		s1++;
 		s2++;
 	}
-	_putchar('\0');
-	if (s1[i] == '\0' || s2[i] == '\0')
-		return (NULL);
+	s1 = '\0';
 	free(s1);
 	return (0);
 }
-
-
