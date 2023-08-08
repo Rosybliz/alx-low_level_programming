@@ -10,19 +10,19 @@
 
 char *_strdup(char *str)
 {
-	int n, i;
-	char *ptr = NULL;
+	int n = 7, i;
 	char *str1;
 
 	str = (char *)malloc(n * sizeof(char));
-	if (n == 0)
+	if (str == NULL)
 		return (NULL);
-	*str1 = (char *)*ptr(str, (n * sizeof(char)));
+
+	str1 = (char *)realloc(str, (n * sizeof(char)));
 
 	for (i = 0; i < n; i++)
 	if (str1[i] != '\0')
 		return (NULL);
 	free(str1);
-	
+
 	return (0);
 }
