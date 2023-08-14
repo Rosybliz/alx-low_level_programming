@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include "main.h"
 #include "dog.h"
 /**
  * init_dog- a function that initializes a variable
