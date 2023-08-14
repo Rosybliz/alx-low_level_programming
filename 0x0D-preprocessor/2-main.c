@@ -7,6 +7,7 @@
 
 int main(void)
 {
-	printf("Compiled from - %s\n", __FILE__);
+	printf("Compiled from - %s", __FILE__);
+	putchar('\n');
 	return (0);
 }
