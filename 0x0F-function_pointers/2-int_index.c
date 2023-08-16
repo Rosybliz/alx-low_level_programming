@@ -12,7 +12,7 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i = 0, n;
+	int i = 0, n = -1;
 
 	if (array != NULL && cmp != NULL)
 	{
@@ -20,8 +20,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		{
 			if (!isdigit(cmp((char)array[i])))
 				n = i;
-			else
-				return (-1);
+			break;
 		}
 		if (size <= 0)
 			return (-1);
