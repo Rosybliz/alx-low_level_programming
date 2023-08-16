@@ -12,19 +12,19 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i = 0;
+	int i = 0, n;
 
 	if (array != NULL && cmp != NULL)
 	{
 		for ( ; i < size; i++)
 		{
-			if (isdigit((char)array[i]))
-				(cmp(array[i]));
+			if (!isdigit(cmp((char)array[i])))
+				n = i;
 			else
 				return (-1);
 		}
 		if (size <= 0)
 			return (-1);
 	}
-	return (cmp(array[i]));
+	return (n);
 }
