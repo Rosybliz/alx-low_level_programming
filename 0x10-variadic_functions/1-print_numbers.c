@@ -18,8 +18,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf("%d", va_arg(my_numbs, int));
 		if (separator != NULL)
+		{
+			if(i < (n - 1))
 			printf("%s", separator);
-	}
+		}
 	printf("\n");
 	va_end(my_numbs);
 }
