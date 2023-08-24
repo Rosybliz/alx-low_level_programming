@@ -11,6 +11,15 @@ list_t *add_node(list_t **head, const char *str);
 list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 int _strlen(const char *s);
+void execute_b4_main(void)__attribute__((constructor));
 
+/*****singly linked list struct*****/
+
+typedef struct list_it
+{
+	char *str;
+	unsigned int len;
+	struct list_it *next;
+}list_t;
 
 #endif
