@@ -13,7 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *ptr;
 	int slen;
 
-	if (new == NULL)
+	if (new != NULL)
 	{
 		slen = _strlen(str);
 		(*new).str = strdup(str);
