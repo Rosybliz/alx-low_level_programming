@@ -1,8 +1,4 @@
-#include "main.h"
-/**
-* main- a function that prints a string
-* Return: 0 on success
-*/
+#include <stdio>
 
 int main(void)
 {
